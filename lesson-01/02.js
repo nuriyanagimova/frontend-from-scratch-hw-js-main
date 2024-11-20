@@ -8,9 +8,9 @@
 // your code
 let factorial = 1;
 n = 10;
-while (n<=10) {
+while (n > 1) {
     factorial *= n;
-    n += 1;
+    n -= 1;
   
 }
 console.log(factorial);
