@@ -16,16 +16,17 @@ includesElement([1, 2, 3], 2)  // должен вернуть `true`.
  function includesElement(array, element) {
     const result = [];
     for (let index = 0; index < array.length; index++) {
-        if(array!==element) {
+        if(array[index]===element) {
             return true;
-        } else {
-            return false;
         }
-        
     }
+       
+            return false;
+        
 
  }
 
 
-const array = [1, 2, 3]
-console.log(includesElement(array, ([1, 2, 3], 2))) 
+const array = [1, 2, 5]
+
+console.log(includesElement(array, ([1, 2, 5], 2))) // true
