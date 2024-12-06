@@ -15,35 +15,28 @@
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
 function includesElement(array, element) {
-    const result = [];
-    for (let index = 0; index < array.length; index++) {
-        if(array[index]===element) {
-            return true;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === element) {
+        return true; // Элемент найден
         }
     }
-       
-            return false;
-        
-
- }
+    return false; // Элемент не найден
+}
 
 
-// const array = [1, 2, 5]
-
-// console.log(includesElement(array, ([1, 2, 5], 2))) // true
-
-function findUniqueElements() {
+function findUniqueElements(array) {
     const result = [];
     for (let i = 0; i < array.length; i++) {
-        if(!includesElement(array[i])) {
-            result.push(array[i])
-
-        }
-        
-        
+        if (!includesElement(result, array[i])) {
+            result.push(array[i]);
+        } 
     }
     return result ;// нужно поместить return за пределы цикла инача он завершает выполнени функции после первого прохода цикла , как только цикл добавляет первый элемент в новый массив
 }
+
+
+
 const array = [1, 2, 3, 2, 1, 4]// не забыть объявить переменную array
 const result = findUniqueElements([1, 2, 3, 2, 1, 4])// не забыть передать аргумент в функцию в виде массива
-console.log(result);
+console.log(result)
+

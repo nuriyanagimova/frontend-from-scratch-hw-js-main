@@ -13,18 +13,18 @@
 includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 */
 
- function includesElement(array, element) {
+function includesElement(array, element) {
     const result = [];
     for (let index = 0; index < array.length; index++) {
         if(array[index]===element) {
             return true;
         }
     }
-       
+    
             return false;
         
 
- }
+}
 
 
 const array = [1, 2, 5]
