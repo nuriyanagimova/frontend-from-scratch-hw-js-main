@@ -11,5 +11,29 @@
 
 Пример работы функции: `doubleEachCharacter('hello')` вернёт `'hheelllloo'`
 */
+function includesElement(array, element) {
+    const result = [];
+    for (let index = 0; index < array.length; index++) {
+        if(array[index]===element) {
+            return true;
+        }
+    }
+    
+            return false;
+        
 
-function doubleEachCharacter() {}
+}
+
+function doubleEachCharacter(str) {
+    const result = [];
+    for (let i = 0; i < str.length; i++) {
+        if (!includesElement(result, str[i])) {
+            result.push(str[i] + str[i] );
+        } 
+    }
+    return result.join('') ;// нужно поместить return за пределы цикла инача он завершает выполнени функции после первого прохода цикла , как только цикл добавляет первый элемент в новый массив
+}
+
+const result = doubleEachCharacter('macaron')
+console.log(result);
+
