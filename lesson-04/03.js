@@ -16,18 +16,18 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
-function includesElement(array, element) {
-    const result = [];
-    for (let index = 0; index < array.length; index++) {
-        if(array[index]===element) {
-            return true;
-        }
-    }
+// function includesElement(array, element) {
+//     const result = [];
+//     for (let index = 0; index < array.length; index++) {
+//         if(array[index]===element) {
+//             return true;
+//         }
+//     }
     
-            return false;
+//             return false;
         
 
-}
+// }
 
 // function findBla1([4, 5, 8], [2, 4, 7]) {
 //     const result = []
@@ -70,6 +70,7 @@ function findCommonElements(array1, array2) {
 const array1 = [1, 2, 3]
 const array2 = [2, 3, 4]
 console.log(findCommonElements([1, 2, 3], [2, 3, 4])) // [2, 3]);
+console.log("COUCO");
 
 
 // function findCommonElements(array1, array2) {

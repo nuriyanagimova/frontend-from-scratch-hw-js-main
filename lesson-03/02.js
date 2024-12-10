@@ -6,4 +6,5 @@ function isEven(num) {
 }
 
 const result = isEven(3)
-console.log(result) 
+=
+console.log(isEven(3)) 
