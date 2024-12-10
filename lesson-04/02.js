@@ -37,6 +37,6 @@ function findUniqueElements(array) {
 
 
 const array = [1, 2, 3, 2, 1, 4]// не забыть объявить переменную array
-const result = findUniqueElements([1, 2, 3, 2, 1, 4])// не забыть передать аргумент в функцию в виде массива
-console.log(result)
+// const result = findUniqueElements([1, 2, 3, 2, 1, 4])// не забыть передать аргумент в функцию в виде массива
+// console.log(result)
 
