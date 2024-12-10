@@ -5,6 +5,6 @@ function isEven(num) {
    return num%2===0 
 }
 
-const result = isEven(3)
-=
+// const result = isEven(3)
+
 console.log(isEven(3)) 
