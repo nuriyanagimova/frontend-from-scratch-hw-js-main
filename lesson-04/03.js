@@ -67,11 +67,11 @@ function findCommonElements(array1, array2) {
         return result;
 }
 
-const array1 = [1, 2, 3]
-const array2 = [2, 3, 4]
-console.log(findCommonElements([1, 2, 3], [2, 3, 4])) // [2, 3]);
+// const array1 = [1, 2, 3]
+// const array2 = [2, 3, 4]
+console.log(findCommonElements([1, 2, 3], [2, 3, 4, 5, 6])) // [2, 3]);
 console.log("COUCO");
-console.log(findCommonElements(['apple', 'banana'], ['banana', 'orange'])) // [2, 3]);
+console.log(findCommonElements(['apple', 'banana', 'cherry'], ['bananaaa'])) // [2, 3]);
 
 // function findCommonElements(array1, array2) {
 //     const result = []; // Создаем пустой массив для общих элементов
