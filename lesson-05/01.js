@@ -9,26 +9,27 @@
 2. Если тип ресурса не существует в объекте `game.resources`, метод должен выводить в консоль сообщение "Invalid resource".
 3. Если ресурс существует, метод должен добавлять значение `amount` к текущему количеству этого ресурса в объекте.
 */
+const game = {
+  resources: {
+    gold: 250,
+    lumber: 100,
+  },
 
-// const game = {
-//   resources: {
-//     gold: 250,
-//     lumber: 100,
-//   },
 
-//   addResource(resource,amount) {
-//     for (const game.resource in game.resources.amount) {
-//       console.log(`${resource} - ${resources[amount]}`);
-//       if(game.resources.gold===resource){
-//         console.log('gold - 50');
-        
-//       }
+
+
+addResource(resource, amount) {
+  if(this.resources[resource]===undefined) {
+console.log('Invalid resource');
+} else {
+this.resources[resource] += amount;
+}
+}
+}
+
+game.addResource('lumber', 50);
+console.log(game.resources.lumber );
       
-      
         
-//       }
-//     }
-   
-//   }
+      
 
-// addResource('gold', 50)
