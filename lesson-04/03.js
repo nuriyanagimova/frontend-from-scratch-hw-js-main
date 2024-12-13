@@ -53,19 +53,15 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 function findCommonElements(array1, array2) {
         const result = [];
         for (let i = 0; i <array1.length; i++ ) {
-            // for (let y = 0; y <array2.length; y++ )
-            //     if (array1[i] === array2[y]) {
-            //         result.push(array1[i]);
-            
-            // }
-        if (includesElement(array2, array1[i])) {
-            result.push(array1[i])
-
-        }
-        }
+            if (includesElement(array2, array1[i])) {
+                result.push(array1[i])
     
-        return result;
-}
+            }
+            }
+        
+            return result;
+    }
+            
 
 // const array1 = [1, 2, 3]
 // const array2 = [2, 3, 4]
@@ -73,14 +69,3 @@ console.log(findCommonElements([1, 2, 3], [2, 3, 4, 5, 6])) // [2, 3]);
 console.log("COUCO");
 console.log(findCommonElements(['apple', 'banana', 'cherry'], ['bananaaa'])) // [2, 3]);
 
-// function findCommonElements(array1, array2) {
-//     const result = []; // Создаем пустой массив для общих элементов
-//     for (let i = 0; i < array1.length; i++) {
-//         if (includesElement(array2, array1[i])) {
-//             result.push(array1[i]); // Если элемент найден в array2, добавляем его в result
-//         }
-//     }
-//     return result; // Возвращаем массив общих элементов
-// }
-// const array1 = [1, 2, 3];
-// const array2 = [2, 3, 4];
