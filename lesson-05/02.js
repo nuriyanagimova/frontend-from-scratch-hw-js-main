@@ -45,3 +45,16 @@ updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506')
 console.log(gallery);
 updateGallery(gallery, 'The Persistence of Memory', 'Salvador Dali')
 console.log(gallery);
+
+
+// function updateGallery(gallery, name_of_work, new_value) {
+//   if (name_of_work in gallery) {
+//     for (key in gallery) {
+//       if (name_of_work === key) {
+//         gallery[key] = new_value;
+//       }
+//     }
+//   } else {
+//     gallery[name_of_work] = new_value;
+//   }
+// }
