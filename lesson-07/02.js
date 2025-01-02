@@ -4,8 +4,12 @@
  */
 
 function isNumeric(str) {
- 
-  return str !==" " && !Number.isNaN(str)
+if (str === " ") {
+  return false
+}
+  const num = Number(str)
+
+  return str !== ' ' && !Number.isNaN(num)
   
 }
 
